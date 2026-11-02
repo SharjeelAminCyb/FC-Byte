@@ -1,0 +1,16 @@
+# Virtual environment
+venv/
+.venv/
+
+# Python cache files
+__pycache__/
+*.pyc
+
+# Secrets: flags and SECRET_KEY
+.env
+
+# The database is created by init_db.py
+*.db
+
+# Editor settings
+.vscode/
