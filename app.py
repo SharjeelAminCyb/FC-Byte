@@ -7,17 +7,17 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
-    return "Welcome to FC Byte"
+    return render_template("index.html")
 
 
 @app.route("/squad")
 def squad():
-    return "The FC Byte squad is coming soon"
+    return render_template("squad.html")
 
 
 @app.route("/club")
 def club():
-    return "The club is still being built. Updates coming soon!"
+    return render_template("club.html")
 
 
 @app.route("/player/<name>")

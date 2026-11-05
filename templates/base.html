@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}FC Byte{% endblock %}
+    </title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style,css')}}">
+</head>
+<body>
+    <div class= "ctf-banner">Training ground: this site is intentionally vulnerable</div>
+<header class="site-header">
+<a href=""{{ url_for('home')}}"
+class="logo">FC BYTE</a>>
+<nav class="main-nav">
+    <a href="{{ url_for('squad')}}" {% if request.endpoint == 'squad' %}class="'active" aria-current="page"{% endif %}>Club</a>
+    <a href="{{ url_for('home')
+}}#news">News</a>
+<a href="#">Shop</a>
+<a href="#">Tickets</a>
+</nav>
+
+</header>
+<main> {% block content %}{% endblock %}
+</main>
+<footer class="site-footer">
+    <p class="footer-slogan">Never trust the input</p>
+    <p> an intentionally vulnerable CTF project. For learning only. Run locally.</p>
+    <p><a href="https://github/SharjeelAminCyb/FC-Byte">https://github/SharjeelAminCyb/FC-Byte</a></p>
+    <p>&copy; 2026 FC Byte</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,43 @@
+
+{% extends "base.html" %}
+
+{% block title %} FC Byte - Home{% endblock %}
+
+{% block content %}
+<section class="hero">
+    <div class="hero-text">
+        <h1>Never trust the input</h1>
+        <p class="hero-intro">FC Byte is a football club with a website full of holes. Find the flags hidden on its pages.</p>
+    </div>
+    <aside class="match-card" aria-labelledby="next-match">
+        <h2 id="next-match">Next match</h2>
+        <div class="match-teams">
+            <span class="team">FC Byte</span>
+            <span class="versus">vs</span>
+            <span class="team">Null Pointer United</span>
+        </div>
+                <p class="match-info">Saturday 19:00 &middot; Byte Arena</p>
+                <a href="#" class="button">Buy tickets</a>
+    </aside>
+</section>
+<section class="news" id="news">
+                            <h2>Latest news</h2>
+                            <div class="news-grid">
+                                <a href="#" class="news-card news-card-lead">
+                                    <p class="news-meta">Match report &middot; 2 November</p>
+                                    <h3>Stack scores twice</h3>
+                                    <p> A late header seals three points at Byte Arena.</p>
+                                </a>
+                                <a href="#" class="news-card">
+                                    <p class="news-meta">Club Shop &middot; 30 October</p>
+                                    <h3>New home kit</h3>
+                                    <p>Black and green, soon in the Club Shop.</p>
+                                </a>
+                                <a href="#" class="news-card">
+                                    <p class="news-meta">Squad &middot; 28 October</p>
+                                    <h3>Malloc stays</h3>
+                                    <p>Our captain signs until 2029.</p>
+                                </a>
+                            </div>
+                        </section>
+{% endblock %}
